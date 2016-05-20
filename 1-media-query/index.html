@@ -26,8 +26,14 @@ nav ul li:hover {
 }
 nav ul li a {
      display: block;
-     ...
 }
+.active {
+	background: white;
+}
+.active a {
+	color:green;
+} 
+
 @media screen and (min-width: 665px) {
     nav {
         font-size: 0;  /* remove spacing issue*/
@@ -36,24 +42,29 @@ nav ul li a {
         display: inline-block;
         width: 120px;
         font-size: 20px;   /* insure font size not 0 */
-        border-bottom: none;
+        border-bottom: blue solid 5px;
         background: red;
    }
+nav ul li:last-child {background-color: orange;
+	border-bottom: 0px;
+ 
 }
+
+
 
 
 	</style>
 </head>
 <body>
-<nav>
-  <ul>
-     <li><a href="#">Home</a></li>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Portfolio</a></li>
-     <li><a href="#">Blog</a></li>
-     <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-	
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li class="active"><a href="#">About</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+		
 </body>
 </html>
